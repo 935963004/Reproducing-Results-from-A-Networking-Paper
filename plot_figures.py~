@@ -80,9 +80,6 @@ def plot_bar_graph(cwnd3_array,cwnd10_array,percent_dict, plot_object):
     plt.close()
 
 if __name__ == "__main__":
-    if not os.path.exists("figures"):
-        os.makedirs("figures")
-
     cwnd3_array, cwnd10_array = read_all_txt_files()
     """ This percent dict is based on the figure5 """
     rtt_bucket_percent_dict = {20: 0.0429, 50: 0.2455, 100: 0.4836, 200: 0.1381, 500: 0.0662, 1000: 0, 3000: 0.007, 5000: 0.0008}
